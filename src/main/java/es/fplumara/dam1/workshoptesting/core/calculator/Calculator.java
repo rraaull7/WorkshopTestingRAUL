@@ -11,7 +11,10 @@ public class Calculator {
     }
 
     public int divide(int a, int b) {
-        if (b == 0) return 0;
-        return a / b;
+        if (b == 0) {
+            throw new IllegalArgumentException("No se puede dividir entre cero");
+        }
+
     }
+    return a / b;
 }
